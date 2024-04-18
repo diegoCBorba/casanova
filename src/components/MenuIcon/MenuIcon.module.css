@@ -1,0 +1,89 @@
+.center {
+  width: 40px;
+
+  cursor: pointer;
+}
+
+.media {
+  position: absolute;
+  right: 24px;
+
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.media.open{
+  pointer-events: all;
+  opacity: 1;
+}
+
+.media.fixed {
+  pointer-events: all;
+  transition: opacity 0.5s ease; 
+  opacity: 1;
+}
+
+
+.fixed{
+  transition: 0.2s;
+  background-color: #40352b;
+  border-radius: 50%;
+
+  position: fixed;
+
+  padding: 0.5rem;
+  top: 2rem;
+  right: 2rem;
+
+  z-index: 50;
+}
+
+.fixed.open{
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 3px;
+  margin: 8px 0;
+  transition: 0.5s;
+}
+.center.open:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.center.open:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.center.open div {
+  transform: scale(0);
+}
+
+@media (max-width: 1200px) {
+  .media{
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .media.fixed{
+    transition: 0.3s ease; 
+  }
+}
+
+@media (max-width: 600px) {
+  .center {
+    width: 40px;
+  }
+
+  .center:before,
+  .center:after,
+  .center div {
+    height: 3px;
+  }
+}

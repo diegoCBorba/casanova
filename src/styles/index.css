@@ -27,3 +27,9 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
+.about-container{
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}

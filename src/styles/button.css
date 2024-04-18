@@ -52,3 +52,64 @@
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
 }
+
+/* BUTTON UNDERLINE */
+
+.btn-under{
+  color: var(--color6);
+  text-decoration: none;
+  
+  display: inline-block;
+  position: relative;
+}
+
+.btn-under:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 500%;
+  background-color: var(--color6);
+  position: absolute;
+  left: 45%;
+  top: 2.5rem;
+
+  transform: scale(0);
+  transition: transform 0.3s ease 0s;
+}
+
+.btn-under:hover:after { 
+  transform: scale(1);
+}
+
+.btn-booble{
+  color: var(--color6);
+  text-decoration: none;
+  
+  display: inline-block;
+  position: relative;
+}
+
+.btn-booble:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 500%;
+  background-color: var(--color6);
+  position: absolute;
+
+  top: 45%;
+  left: -1.5rem;
+
+  transform: scale(0);
+  transition: transform 0.3s ease 0s;
+}
+
+.btn-booble:hover:after { 
+  transform: scale(1); 
+}
