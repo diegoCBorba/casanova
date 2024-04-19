@@ -1,6 +1,6 @@
 import header from "../Header.module.css"
 
-import littleProject from "../../../../public/image.png"
+import littleProject from "../../../../public/header/image.png"
 
 export const PsHeader = () => {
   return (

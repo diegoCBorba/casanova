@@ -1,0 +1,184 @@
+.containerMaster{
+  display: flex;
+  padding: 0 2rem;
+}
+
+.containerMaster > div{
+  width: 50%;
+}
+
+.containerProjects{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+
+  gap: 1.5rem;
+
+  padding-right: 2.5rem;
+}
+
+.containerProjects img:first-child{
+  height: 100%;
+  width: 50%;
+}
+
+.containerProjects img:last-child{
+  height: 80%;
+  width: 50%;
+}
+
+.containerAbout{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.containerAbout h2{
+  font-size: 2.5rem;
+}
+
+.titleAbout{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.titleAbout div{
+  height: 4px;
+  width: 2.5rem;
+  background-color: var(--color2);
+}
+
+.titleAbout p{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.description{
+  border-left: 4px solid var(--color2);
+  padding-left: 1rem;
+  padding-bottom: 0.2rem;  
+}
+
+.congratulationsContainer{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+
+  gap: 1rem;
+}
+
+.congratulations{
+  position: relative;
+  text-align: center;
+
+  width: 100%;
+  border-radius: 2rem;
+
+  padding: 1rem 0;
+  background-color: #8c847d29;
+}
+
+.congratulations h3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-left: 10%;
+
+  font-size: 4rem;
+}
+
+.descriptionCongra{
+  font-size: 2rem;
+}
+
+.columnAbout{
+  width: 0.4rem;
+  background-color: var(--color2);
+}
+
+@media (max-width: 1580px) {
+  .containerMaster{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .containerMaster > div{
+    width: auto;
+  }
+
+  .containerProjects{
+    padding-right: 0rem;
+    justify-content: center;
+  }
+
+  .containerProjects img:first-child, .containerProjects img:last-child{
+    height: 100%;
+  }
+
+  .containerProjects img:last-child{
+    max-height: 600px;
+    max-width: 450px;
+
+    width: 80%;
+  }
+
+  .containerProjects img:first-child{
+    max-height: 600px;
+    max-width: 450px;
+
+    width: 100%;
+  }
+
+  .containerProjects{
+    height: min-content;
+  }
+
+  .congratulations h3{
+    padding-left: 5%;
+  }
+
+  .aboutButton{
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 630px) {
+  .containerProjects{
+    gap: 0.5rem;
+  }
+
+  .titleAbout p{
+    font-size: 1rem;
+  }  
+
+  .congratulationsContainer{
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .columnAbout{
+    height: 0.2rem;
+    width: 100%;
+  }
+
+  .congratulations h3{   
+    font-size: 8vw;
+  }
+
+  .containerAbout h2{
+    font-size: 1.5rem;
+  }
+  
+  .descriptionCongra{
+    font-size: 1.3rem;
+  }
+
+  .aboutButton{
+    font-size: 0.8rem;
+  }
+}
