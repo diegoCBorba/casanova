@@ -120,17 +120,11 @@
   }
 
   .containerProjects img:last-child{
-    max-height: 600px;
-    max-width: 450px;
-
-    width: 80%;
+    width: 42%;
   }
 
   .containerProjects img:first-child{
-    max-height: 600px;
-    max-width: 450px;
-
-    width: 100%;
+    width: 54%;
   }
 
   .containerProjects{

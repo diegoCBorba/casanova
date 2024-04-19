@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 export const About = () => {
   return (
     <section id="about" className="container-section">
+
       <div className={about.containerMaster}>
         <div className={about.containerProjects}>
           <img src={projeto1} alt="Projeto de uma cozinha" />
