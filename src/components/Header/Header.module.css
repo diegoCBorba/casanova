@@ -3,7 +3,7 @@
   min-height: 100vh;
   height: 100%;
   background-color: var(--color2);
-  background-image: linear-gradient(to bottom, #594d4272, #594d4286), url(../../../public/header/projeto-grande.jpg);
+  background-image: linear-gradient(to bottom, #594d4272, #594d4286), url(../../../public/header/projeto-grande.jpg); 
   background-size: cover;
 }
 
@@ -118,7 +118,7 @@
   .aboutContainer{
     flex-direction: column;
     align-items: normal;
-    justify-content: end;
+    justify-content: initial;
   
     gap: 2rem;
 
