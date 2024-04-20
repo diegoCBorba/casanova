@@ -155,11 +155,12 @@
   .congratulationsContainer{
     flex-direction: column;
     gap: 0.7rem;
+    align-items: center;
   }
 
   .columnAbout{
     height: 0.2rem;
-    width: 100%;
+    width: 80%;
   }
 
   .congratulations h3{   
