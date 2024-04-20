@@ -19,12 +19,12 @@
 
 .containerProjects img:first-child{
   height: 100%;
-  width: 50%;
+  width: 48%;
 }
 
 .containerProjects img:last-child{
   height: 80%;
-  width: 50%;
+  width: 48%;
 }
 
 .containerAbout{
