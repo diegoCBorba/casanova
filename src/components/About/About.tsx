@@ -3,6 +3,8 @@ import about from "./About.module.css";
 import projeto1 from "../../../public/about/about-1.jpg"
 import projeto2 from "../../../public/about/about-2.jpg"
 
+import { Title } from "../Title/Title";
+
 import { motion } from "framer-motion";
 
 export const About = () => {
@@ -15,10 +17,7 @@ export const About = () => {
         </div>
 
         <div className={about.containerAbout}>
-          <div className={about.titleAbout}>
-            <div/>
-            <p>Sobre Nós</p>
-          </div>
+          <Title>Sobre nós</Title>
           <h2>Herança em Cada Detalhe: Móveis Feitos com Amor e Dedicação</h2>
           <div className={about.description}>
             <p>Um lugar onde tradição e inovação se encontram para criar móveis que contam histórias. Fundada sobre os alicerces de uma empresa familiar, valorizamos cada peça como se fosse parte de nossa própria história.</p>

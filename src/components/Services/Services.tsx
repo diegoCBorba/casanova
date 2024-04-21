@@ -1,6 +1,7 @@
 import service from "./Services.module.css"
 
 import { Link } from "react-router-dom"
+import { Title } from "../Title/Title"
 
 export const Services = () => {
   return (
@@ -8,10 +9,7 @@ export const Services = () => {
       <section id="about" className="container-section">
         <div className={service.containerServices}>
           <div className={service.boxAbout}>
-            <div className={service.containerTitleService}>
-              <span className={service.teste}></span>
-              <h2>Serviços</h2>
-            </div>
+            <Title>Serviços</Title>
             <h1>Nossa tipologia de serviços</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, odio?</p>
             <a href="" className="btn-flip2" data-back="Serviços" data-front="Saiba mais"/>

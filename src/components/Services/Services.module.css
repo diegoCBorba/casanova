@@ -16,31 +16,13 @@
   gap: 1rem;
 } 
 
-.boxAbout h1{
+.boxAbout > h1{
   font-size: 2.5rem;
   font-weight: 500;
 }
 
 .boxAbout p{
   color: var(--color2);
-}
-
-.containerTitleService{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.containerTitleService span{
-  display: block;
-  height: 0.3rem;
-  width: 2rem;
-  background-color: var(--color3)
-}
-
-.containerTitleService h2{
-  font-size: 1.2rem;
-  text-transform: uppercase;
 }
 
 .containerLinks{
