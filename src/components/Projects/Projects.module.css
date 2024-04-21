@@ -4,6 +4,13 @@
   
   position: absolute;
   cursor: pointer;
+  transition: color 300ms;
+
+  width: fit-content;
+}
+
+.arrowBtnRight:active, .arrowBtnLeft:active{
+  color: var(--color3);
 }
 
 .arrowBtnLeft{
