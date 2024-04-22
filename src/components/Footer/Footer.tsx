@@ -36,7 +36,6 @@ export const Footer = () => {
               <Link className={footer.link} to="/services">Serviços</Link>
               <Link className={footer.link} to="/projects">Projetos</Link>
               <Link className={footer.link} to="/contact">Contato</Link>
-              <a className={footer.link} href="#team">Equipe</a>    
             </div>
           </div>
 
