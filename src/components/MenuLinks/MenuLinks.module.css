@@ -18,10 +18,10 @@
     max-height: 100vh;
     height: 100%;
 
-    overflow-y: scroll;
+    overflow-y: hidden;
     padding: 0 4rem;
     padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 8vh;
 
     display: flex;
     flex-direction: column;
@@ -61,5 +61,11 @@
 
     .containerLinks{
         font-size: 10vw;
+    }
+}
+
+@media (max-height: 620px){
+    .aboutContainer{
+        overflow-y: scroll;
     }
 }
