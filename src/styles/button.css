@@ -102,15 +102,22 @@
   transform: scale(1);
 }
 
-.btn-booble{
-  color: var(--color6);
+.btn-booble, .btn-booble2{
   text-decoration: none;
   
   display: inline-block;
   position: relative;
 }
 
-.btn-booble:after {    
+.btn-booble{
+  color: var(--color6);
+}
+
+.btn-booble2{
+  color: var(--color7);
+}
+
+.btn-booble:after, .btn-booble2:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -118,7 +125,6 @@
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 500%;
-  background-color: var(--color6);
   position: absolute;
 
   top: 45%;
@@ -128,6 +134,14 @@
   transition: transform 0.3s ease 0s;
 }
 
-.btn-booble:hover:after { 
+.btn-booble:after{
+  background-color: var(--color6);
+}
+
+.btn-booble2:after{
+  background-color: var(--color7);
+}
+
+.btn-booble:hover:after, .btn-booble2:hover:after { 
   transform: scale(1); 
 }

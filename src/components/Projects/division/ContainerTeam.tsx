@@ -42,18 +42,11 @@ export const CarouselProject = () => {
       customLeftArrow={<CustomLeftArrow/>}
       customRightArrow={<CustomRightArrow/>}
       arrows
-      centerMode={false}
       containerClass="container-with-dots"
-      dotListClass=""
-      focusOnSelect={false}
       infinite
-      itemClass=""
       keyBoardControl
       minimumTouchDrag={10}
-      pauseOnHover
       shouldResetAutoplay
-      showDots={false}
-      sliderClass=""
       slidesToSlide={1}
       swipeable
     >

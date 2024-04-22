@@ -1,0 +1,117 @@
+.containerMaster{
+  padding: 0 2rem;
+}
+
+.containerTitle{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.containerTitle span{
+  color: var(--color3);
+}
+
+.containerTitle > h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.containerTeam{
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 4rem;
+}
+
+.containerOptions{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.containerOptions > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.containerOptions li{
+  list-style: none;
+  width: fit-content;
+  
+  cursor: pointer;
+
+  transition: transform 300ms;
+}
+
+.containerOptions li:hover{
+  transform: scale(1.1);
+}
+
+.select{
+  color: var(--color3);
+  transform: scale(1.1);
+}
+
+.containerPerson{
+  display: flex;
+  gap: 1rem;
+}
+
+.boxAbout p{
+  color: var(--color3);
+}
+
+.boxImage{
+  max-width: 300px;
+}
+
+.boxImage img{
+  width: 100%;
+}
+
+@media (max-width: 1000px){
+  .containerTitle > h2{
+    font-size: 2rem;
+  }
+
+  .containerTeam{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .containerOptions ul{
+    font-size: 1.5rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .boxAbout h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 640px){
+  .containerTitle > h2{
+    font-size: 1.5rem;
+  }
+
+  .containerOptions ul{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .containerOptions li{
+    font-size: 1.2rem;
+  }
+
+  .containerOptions li:hover{
+    transform: scale(1.05);
+  }
+
+  .containerPerson{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -10,7 +10,7 @@ export const Services = () => {
         <div className={service.containerServices}>
           <div className={service.boxAbout}>
             <Title>Serviços</Title>
-            <h1>Nossa tipologia de serviços</h1>
+            <h1>Nossa Tipologia de Serviços</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, odio?</p>
             <a href="" className="btn-flip2" data-back="Serviços" data-front="Saiba mais"/>
           </div>

@@ -1,7 +1,7 @@
 import project from "./Projects.module.css"
 
 import { Title } from "../Title/Title"
-import { CarouselProject } from "./division/CarouselProject"
+import { CarouselProject } from "./division/ContainerTeam"
 
 export const Projects = () => {
   return (
@@ -9,7 +9,7 @@ export const Projects = () => {
       <div className={project.containerMaster}>
         <div className={project.containerTitle}>
           <Title>Projetos</Title>
-          <p>Veja o que podemos criar para você explorando nossos <span>projetos anteriores</span></p>
+          <h2>Veja o que podemos criar para você explorando nossos <span>projetos anteriores</span></h2>
         </div>
         <CarouselProject/>
       </div>
