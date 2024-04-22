@@ -6,11 +6,16 @@ interface Props{
   to: string,
   className: string,
   children?: React.ReactNode,
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
 export const ListItem = (props: Props) => {
+  const handleClick = () => {
+    props.setIsActive(false);
+  };
+
   return (
-    <Link to={props.to}>
+    <Link to={props.to} onClick={handleClick}>
       <motion.div
         className={props.className}
         initial={{ scale: 1 }}

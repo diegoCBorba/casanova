@@ -4,12 +4,13 @@ import { motion } from "framer-motion"
 import { SocialIcons } from "../Header/division/SocialIcons"
 import { RoutesList } from "../NavBar/division/RoutesList"
 
-interface Props{
-  active: boolean
+interface MenuLinksProps {
+  active: boolean,
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
-export const MenuLinks = (props: Props) => {
-  const active = props.active
+export const MenuLinks = (props: MenuLinksProps) => {
+  const { active, setIsActive } = props
 
   return (
     <motion.div 
@@ -25,7 +26,7 @@ export const MenuLinks = (props: Props) => {
         <div>
           <p>Opções</p>
           <div className={menuLink.containerLinks}>
-            <RoutesList className="btn-booble"/>
+            <RoutesList setIsActive={setIsActive} className="btn-booble"/>
           </div>
         </div>
         <div className={menuLink.iconsContainer}>

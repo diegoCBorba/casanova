@@ -22,13 +22,13 @@ export const NavBar = () => {
         <img src={logo} alt="logo Casa Nova Projetados"/>
       </Link>
       <nav className={nav.containerLinks}>
-        <RoutesList className="btn-under"/>
+        <RoutesList setIsActive={setIsActive} className="btn-under"/>
       </nav>
       <MenuIcon 
       onClick={toggleIcon}
       className={isActive ? menu.open : ""}
       />
-      <MenuLinks active={isActive}/>
+      <MenuLinks active={isActive} setIsActive={setIsActive}/>
     </div>
   )
 }
