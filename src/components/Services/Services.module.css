@@ -74,6 +74,13 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.iconShare:hover{
+  transform: scale(1.1);
 }
 
 .iconShare svg{
@@ -128,5 +135,10 @@
 
   .boxServices h2{
     font-size: 1.2rem;
+  }
+
+  .iconShare svg{
+    height: 1.2rem;
+    width: 1.2rem;
   }
 }
