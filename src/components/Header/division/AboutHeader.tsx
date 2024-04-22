@@ -10,7 +10,7 @@ export const AboutHeader = () => {
         <h1>Marcenaria Exclusiva</h1>
         <h2 className={header.subtitleTrans}>Casa Nova</h2>
         <h2>Casa Nova</h2>
-        <p>Podemos tornar sua vida mais confortável e seu interior verdadeiramente bonito.</p>
+        <p>Há 28 anos com a qualidade que você precisa. Garantimos a excelência e o compromisso!</p>
       </div>
       <Link to="/about" className={`btn-flip ${header.btn}`} data-back="Clique Aqui" data-front="Saiba Mais"/>
       <SocialIcons/>

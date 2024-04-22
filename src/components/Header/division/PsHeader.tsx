@@ -14,15 +14,15 @@ export const PsHeader = () => {
       </div>
       <div className={header.psDescription}>
         <div>
-          <p>Iremos liderar o projeto de design e coordenar a remodelação, além de fornecer serviços de acabamento completo, incluindo materiais e móveis personalizados.</p>
+          <p>Explore o nosso mundo de móveis planejados: da concepção à montagem, estamos ao seu lado para criar peças que refletem sua personalidade e estilo através de uma marcenaria exclusiva e dedicada!</p>
+        </div>
+        <div>
+          <h2>Humanização</h2>
+          <p>Buscamos transformar nosso serviço em uma experiência única para você.</p>
         </div>
         <div>
           <h2>Qualidade</h2>
-          <p>Sinta você mesmo o conforto dos nossos móveis.</p>
-        </div>
-        <div>
-          <h2>Beleza</h2>
-          <p>Design exclusivo e soluções de interiores cativantes.</p>
+          <p>Nossa marca registrada está no acabamento impecável, assegurando a você um produto exclusivo e de alta qualidade.</p>
         </div>
       </div>
     </div>
