@@ -1,5 +1,9 @@
+import "./Contact.css"
+
+import { TitlePages } from "../../components/Title/TitlePages"
+
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <TitlePages title="Contatos"/>
   )
 }

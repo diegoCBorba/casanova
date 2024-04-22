@@ -11,7 +11,7 @@ export const FooterEmail = () => {
         type="email"
         placeholder="Digite seu e-mail"
         className={footer.inputEmail}/>
-        <Link to="/" className="btn-flip2" data-back="e-mail" data-front="Enviar"></Link>
+        <Link to="/contact" className="btn-flip2" data-back="e-mail" data-front="Enviar"></Link>
       </div>
     </div>
   )

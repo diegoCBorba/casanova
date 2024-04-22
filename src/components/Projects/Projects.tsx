@@ -3,7 +3,7 @@ import project from "./Projects.module.css"
 import { Title } from "../Title/Title"
 import { CarouselProject } from "./division/ContainerTeam"
 
-export const Projects = () => {
+export const ProjectsHome = () => {
   return (
     <section id="projects" className="container-section">
       <div className={project.containerMaster}>

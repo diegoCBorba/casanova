@@ -3,9 +3,11 @@ import about from "./About.module.css";
 import projeto1 from "../../../public/about/about-1.jpg"
 import projeto2 from "../../../public/about/about-2.jpg"
 
+import { Link } from "react-router-dom";
+
 import { Title } from "../Title/Title";
 
-export const About = () => {
+export const AboutHome = () => {
   return (
     <section id="about" className="container-section">
       <div className={about.containerMaster}>
@@ -36,7 +38,7 @@ export const About = () => {
             </div>
           </div>
           <div className={about.aboutButton}>
-            <a href="" className="btn-flip2" data-back="Sobre nós" data-front="Leia mais"/>
+            <Link to="/about" className="btn-flip2" data-back="Sobre nós" data-front="Leia mais"/>
           </div>
         </div>
       </div>

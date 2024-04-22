@@ -16,3 +16,76 @@
   width: 2.5rem;
   background-color: var(--color2)
 }
+
+/* TITLE PAGES */
+
+.containerMaster{
+  padding: 4rem 2rem;
+  width: 100%;
+
+  background-color: var(--color2);
+  background-image: url(../../../public/title/backgrounTitlePages.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.titlePages{
+  color: var(--color6);
+
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titlePages h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.titlePages a{
+  color: var(--color6);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+
+  transform: scale(1);
+  transition: transform 400ms;
+}
+
+.titlePages a:hover{
+  transform: scale(1.05);
+}
+
+.titlePages span{
+  display: block;
+
+  height: 4px;
+  width: 2rem;
+  background-color: var(--color4);
+}
+
+.btnBack{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px){
+  .containerMaster{
+    padding: 4rem 1rem;
+  }
+
+  .titlePages h1{
+    font-size: 8vw;
+  }
+
+  .titlePages span{
+    width: 4vw;    
+  }
+  .titlePages a{
+    font-size: 4vw;
+  }
+}
