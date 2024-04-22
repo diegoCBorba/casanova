@@ -3,6 +3,11 @@
   background-size: cover;
 }
 
+.containerSection{
+  padding-top: 0rem;
+  margin-top: 4rem;
+}
+
 .containerServices{
   display: flex;
   gap: 1rem;
@@ -119,5 +124,9 @@
 
   .boxAbout > h1{
     font-size: 2rem;
+  }
+
+  .boxServices h2{
+    font-size: 1.2rem;
   }
 }
