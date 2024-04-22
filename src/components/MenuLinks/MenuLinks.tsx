@@ -15,7 +15,7 @@ export const MenuLinks = (props: MenuLinksProps) => {
   return (
     <motion.div 
     className={menuLink.containerMenu}
-    initial={{height: "0", width: ""}}
+    initial={{height: "0", width: "0"}}
     animate={{ 
       height: active ? "150vh" : "0",
       width: active ? "100%" : "0",
