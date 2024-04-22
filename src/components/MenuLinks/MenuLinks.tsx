@@ -9,13 +9,15 @@ interface Props{
 }
 
 export const MenuLinks = (props: Props) => {
+  const active = props.active
+
   return (
     <motion.div 
     className={menuLink.containerMenu}
     initial={{height: "0", width: ""}}
     animate={{ 
-      height: props.active ? "150vh" : "0",
-      width: props.active ? "100%" : "0",
+      height: active ? "150vh" : "0",
+      width: active ? "100%" : "0",
      }}
     transition={{duration: 0.5}}
     >

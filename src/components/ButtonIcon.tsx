@@ -1,7 +1,7 @@
-import { motion, HTMLMotionProps } from "framer-motion";
+import { ComponentProps } from "react";
 import React from "react";
 
-interface Props extends HTMLMotionProps<"a"> {
+interface Props extends ComponentProps<"a"> {
   src: string;
   children?: React.ReactNode;
 }
@@ -10,14 +10,11 @@ export const ButtonIcon = (props: Props) => {
   const { src, children, ...rest } = props; // Extrair src e children e todas as outras props
 
   return (
-    <motion.a
+    <a className="btn-icon"
       href={src}
-      initial={{ scale: 1 }}
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.4 }}
-      {...rest} // Spread das outras props
+      {...rest}
     >
       {children}
-    </motion.a>
+    </a>
   );
 };

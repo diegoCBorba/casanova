@@ -15,32 +15,34 @@ export const Team = () => {
   };
 
   return (
-    <section id="team" className="container-section">
-      <div className={team.containerMaster}>
-        <div className={team.containerTitle}>
-          <Title>Nossa Equipe</Title>
-          <h2>Nós somos orgulhosos do nosso time de <span>profissionais</span></h2>
-        </div>
-        <div className={team.containerTeam}>
-          <div className={team.containerOptions}>
-            <ul>
-              <li 
-              onClick={() => handleCategorySelect('lider')}
-              className={selectedCategory === 'lider' ? team.select : ""}
-              >Lider</li>
-              <li 
-              onClick={() => handleCategorySelect('marceneiros')}
-              className={selectedCategory === 'marceneiros' ? team.select : ""}
-              >Marceneiros</li>
-              <li
-              onClick={() => handleCategorySelect('arquitetos')}
-              className={selectedCategory === 'arquitetos' ? team.select : ""}
-              >Arquiteto(s)</li>
-            </ul>
+    <div className={team.backgroundTeam}>
+      <section id="team" className="container-section">
+        <div className={team.containerMaster}>
+          <div className={team.containerTitle}>
+            <Title>Nossa Equipe</Title>
+            <h2>Nós somos orgulhosos do nosso time de <span>profissionais</span></h2>
           </div>
-          <ContainerTeam selectedCategory={selectedCategory}/>
+          <div className={team.containerTeam}>
+            <div className={team.containerOptions}>
+              <ul>
+                <li
+                onClick={() => handleCategorySelect('lider')}
+                className={selectedCategory === 'lider' ? team.select : ""}
+                >Lider</li>
+                <li
+                onClick={() => handleCategorySelect('marceneiros')}
+                className={selectedCategory === 'marceneiros' ? team.select : ""}
+                >Marceneiros</li>
+                <li
+                onClick={() => handleCategorySelect('arquitetos')}
+                className={selectedCategory === 'arquitetos' ? team.select : ""}
+                >Arquiteto(s)</li>
+              </ul>
+            </div>
+            <ContainerTeam selectedCategory={selectedCategory}/>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
