@@ -1,7 +1,18 @@
-// import options from "./ListOptions.module.css"
+import options from "./ListOptions.module.css";
 
-export const ListOptions = () => {
-  return (
-    <div>ListOptions</div>
-  )
+import { ReactNode } from "react";
+
+interface PropsListOptions {
+  children ?: ReactNode
 }
+
+export const ListOptions = (props: PropsListOptions) => {
+
+  return (
+    <section className={`container-section ${options.containerMaster}`} id="#optionsServices">
+      <ul className={options.containerList}>
+        {props.children}
+      </ul>
+    </section>
+  );
+};

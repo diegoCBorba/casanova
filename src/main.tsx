@@ -29,7 +29,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services/>
+        element: <Services data='residenciais'/>
+      },
+      {
+        path: "/services/commercials",
+        element: <Services data='comerciais'/>
+      },
+      {
+        path: "/services/residential",
+        element: <Services data='residenciais'/>
       },
       {
         path: "/projects",

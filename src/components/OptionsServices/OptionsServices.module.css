@@ -1,0 +1,63 @@
+.containerServices{
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.containerOptionService{
+  flex: 1;
+  background-color: var(--color2);
+  height: 200px;
+  width: 100%;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerOptionService h1{
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+  color: var(--color6);
+}
+
+.containerOptionService h1{
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.containerOptionService:hover h1{
+  transform: scale(1.1);
+}
+
+.imgResidential, .imgCommercials{
+  background-position: center;
+  background-size: cover;
+}
+
+.imgResidential{
+  background-image: url(../../../public//service/backgroundResidential.webp);
+}
+
+.imgCommercials{
+  background-image: url(../../../public/service/backgroundCommercials.webp);
+}
+
+@media (max-width: 600px){
+  .containerServices{
+    flex-direction: column;
+  }
+
+  .containerOptionService{
+    flex: auto;
+  }
+
+  .containerOptionService h1{
+    font-size: 1.5rem;
+  }
+}
