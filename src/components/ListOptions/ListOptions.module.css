@@ -33,7 +33,7 @@
   width: 0;
 }
 
-.listItem:hover::after {
+.listItem:hover::after, .active.listItem::after{
   background: var(--color3);
   width: 100%; 
   left: 0; 
@@ -52,7 +52,7 @@
   transition: 300ms;
 }
 
-.listItem a:hover{
+.listItem a:hover, .active.listItem a{
   color: var(--color2);
 }
 
