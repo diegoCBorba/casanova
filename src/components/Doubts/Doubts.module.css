@@ -1,0 +1,73 @@
+.containerMaster{
+  padding: 0 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.containerAbout{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.containerAbout > *{
+  flex: 1;
+}
+
+.containerAbout h2{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.containerDoubts{
+  margin-top: 3rem;
+}
+
+.containerDoubts > div{
+  width: 100%;
+}
+
+.containerDoubts > div:not(:last-child){
+  border-bottom: 1px solid var(--color4);
+}
+
+.doubt{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+  padding: 2rem 0;
+  transition: 0.5s;
+}
+
+.doubt > div{
+  padding-bottom: 0rem;
+  transition: padding-bottom 0.5s ease;
+}
+
+.doubt.open > div{
+  padding-bottom: 1rem;
+}
+
+.doubtsTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.doubtsTitle > svg { 
+  transform: rotate(180deg);
+}
+
+.doubtsTitle.open > svg { 
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1000px){
+  .containerAbout{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
